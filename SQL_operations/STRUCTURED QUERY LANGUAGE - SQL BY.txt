@@ -1,0 +1,74 @@
+STRUCTURED QUERY LANGUAGE - SQL BY ANSI(AMERICAN NATIONAL STANDARD INSTITUTE)
+SCHEMA -> SCHEMA IS GROUP OF DIFFERENT TYPE OF OBJECTS.(LIBRARY)
+VIEW, TRIGGER,
+1.INTERACTIVE SQL -> SIMPLE SQL WITHOUT EMBEDDED WITH ANOTHER TECH                                   F9 -> PREV QUERY
+2.EMBEDDED SQL -> CONNECT WITH ANOTHER TECH
+________________________________________________________________________________________________________________________________________________________
+
+C:/EXEC-SQL
+......
+YOU CAN WRITE SQL QUERY BUT ONLY ONE NOT MORE THAN 1.
+......
+C:/END-EXEC
+_________________________________________________________________________________________________________________________________________________________
+
+VIEW -> VIEW IS DB SCHEMA OBJECT WHICH DEFINES REFERS ONE OR MORE TABLE,BUT DOES NOT STORE ROW IN ITSELF.WHEN APPLCIATION QUERY ON THE VIEW FROM A TABLE 
+WHICH REFER AND PROVIDE TS TO APPLICATION
+_________________________________________________________________________________________________________________________________________________________
+
+OPERATIONS
+INSERT -> INSERT INTO TENY12LIB/FILENM THEN PRESS F4
+COPY DATA FROM ANOTHER FILE -> INSERT INTO TENY12LIB/EMPSQL SELECT *FROM TENY12LIB/EMPMAST1
+UNION -> SELECT CLNM1....CLNMN FROM LIBNM/FILENM UNION SELECT CLNM1......CLNMN FROM LIBNM/FILENM
+JOIN -> SELECT M.ACNO,M.ACHOLDER,M.ACTYPE,M.MSTBAL,T.TRNTYPE,T.TRNMODE FROM BANKMAST M, BANKTRAN T WHERE M.ACNO=T.ACNO
+_________________________________________________________________________________________________________________________________________________________
+
+WHY EMBEDED.?
+  SQL                                                      RPG/COBOL
+DOES NOT PROVIDE UI                                                    FLEXIBLE UI.
+DYNAMIC AGREGATION WITH SINGLE STATEMENT                               NEED LARGER CODE.
+REDUCES CODE                                                           LARGER CODE AND INTERATION.
+_________________________________________________________________________________________________________________________________________________________
+
+SQL CURSOR
+CURSOR -> CURSOR IS BLOCK OF MEMORY THAT HOLD QUERY DEFINITON IN HEADER AND ROWID THAT SATISFIED THE QUERY AS STORED 
+IMPLICIT CURSOR -> CREATED BY SYSTEM, WHENEVER SELECT OR CRUD OPERATION ARE EXECUTED. BUT APPLICATION DOES NOT HAVE ANY KIND OF CONTROL ON CURSOR.
+EXPLICIT CURSOR -> CREATED BY SQL DECLARED CURSOR NAME CURSOR, APPLICATION HAS CONTROL OVER CURSOR FOR FETCHING THE ROW.
+
+HANDLING EXPLICIT CURSOR
+DECLARE CURNAME                     CREATES EXPLICIT CURSOR.
+OPEN CURNAME                        APPLICATION OBTAINS HANDLE(POINTER) TO THE CURSOR.
+FETCH FROM CURNAME                  APPLICATION FETCHES ONE ROW FROM CURSOR.
+CLOSE CURNAME                       DELETES THE CURSOR DEFINITION.
+
+SOURCE MEMBER TYPE                     OBJECT TYPE
+SQLRPGLE                               *PGM          (FOR EMBEDED SQL)
+_________________________________________________________________________________________________________________________________________________________
+
+WHENEVER SQL EMBEDED IN RPG SYSTEM EXPLICITELY ONE DATA STRUCTURE TO RPG CODE THEN DATA FOR.
+
+DSPLY  1077952576 
+DSPLY      501-   ERRORS REGARDING TO CURSOR
+__________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
